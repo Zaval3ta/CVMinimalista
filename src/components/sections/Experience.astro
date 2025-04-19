@@ -8,7 +8,7 @@ import { work } from "@cv"
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
+        ({ name, startDate, endDate, position, summary, summary2, summary3, url }) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Actual"
@@ -43,6 +43,10 @@ import { work } from "@cv"
 
                 <footer>
                   <p>{summary}</p>
+                  <br/>
+                  <p>{summary2}</p>
+                  <br/>
+                  <p>{summary3}</p>
                 </footer>
               </article>
             </li>
