@@ -1,15 +1,9 @@
 export interface CV {
   basics: Basics
   work: Array<Work>
-  volunteer: Array<Volunteer>
   education: Array<Education>
-  awards: Array<Awards>
-  certificates: Array<Certificates>
-  publications: Array<Publications>
   skills: Array<Skills>
   languages: Array<Languages>
-  interests: Array<Interests>
-  references: Array<References>
   projects: Array<Projects>
 }
 
@@ -46,24 +40,14 @@ interface Work {
   startDate: DateStr
   endDate: DateStr | null
   summary: string
-  highlights: Highlight
+  summary2: string
+  summary3: string
 }
 
 type DateStr = `${string}-${string}-${string}`
 
-interface Volunteer {
-  organization: string
-  position: string
-  url: string
-  startDate: DateStr
-  endDate: DateStr
-  summary: string
-  highlights: Highlight
-}
-
 interface Skills {
   name: string
-  level: string
   keywords: Array<string>
 }
 
@@ -74,30 +58,11 @@ interface Awards {
   summary: string
 }
 
-interface Certificates {
-  name: string,
-  date: DateStr,
-  issuer: string,
-  url: string
-}
-
-interface Publications {
-  name: string
-  publisher: string
-  releaseDate: DateStr
-  url: string
-  summary: string
-}
-
 interface Education {
   institution: string
-  url: string
   area: string
-  studyType: string
   startDate: DateStr
   endDate: DateStr
-  score: string
-  courses: Array<string>
 }
 
 interface Languages {
@@ -108,19 +73,6 @@ interface Languages {
 type Language =
   "Spanish"
   | "English"
-  | "German"
-  | "France"
-  | "Italian"
-  | "Korean"
-  | "Portuguese"
-  | "Chinese"
-  | "Arabic"
-  | "Dutch"
-  | "Finnish"
-  | "Russian"
-  | "Turkish"
-  | "Hindi"
-  | "Bengali"
   | string
 
 interface Projects {
@@ -131,15 +83,4 @@ interface Projects {
   url: string
   github?: string
 }
-
-interface Interests {
-  name: string
-  keywords: Array<string>
-}
-
-interface References {
-  name: string
-  reference: string
-}
-
 type Highlight = Array<String>
