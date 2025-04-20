@@ -1,20 +1,20 @@
 ---
 import Section from "../Section.astro"
 
-import { projects } from "@cv"
+import { certificados } from "@cv"
 ---
 
-<Section title="Proyectos">
+<Section title="Certificados">
   <ul>
     {
-      projects.map(
+      certificados.map(
         ({ url, description, highlights, name, isActive }) => {
           return (
             <li>
               <article>
                 <header>
                   <h3>
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
+                    <a href={url} target="_blank" title={`Ver el certificado ${name}`}>
                       {name}
                     </a>
                     {isActive && <span>•</span>}

@@ -141,5 +141,48 @@
       ],
       "url": "https://gradustec.com/"
     }
+  ],
+  "certificados": [
+    {
+      "name": "C# .Net",
+      "isActive": true,
+      "description": "Curso de C#.NET. Reforce mis conocimientos en POO, aprendi LINQ con Entity Framework y programación funcional.",
+      "highlights": [
+        "Curso de C#.NET",
+        "Finalizado"
+      ],
+      "url": "https://www.udemy.com/certificate/UC-ce4de971-5f76-4bd7-9445-1fc1283b409c/"
+    },
+    {
+      "name": "Backend en C# .NET",
+      "isActive": true,
+      "description": "Entity Framework, LINQ, Asincrónica, inyección de dependencias, y manejos de respuestas con el uso de herramientas que nos otorga el framework ASP.NET core",
+      "highlights": [
+        "Backend en C# .NET/ ASP.NET core",
+        "Finalizado"
+      ],
+      "url": "https://www.udemy.com/certificate/UC-5c373fb7-5d56-4c38-b1c9-8ee9bdc20fb4/"
+    },
+    {
+      "name": "Clean Architecture en C# .NET",
+      "isActive": true,
+      "description": "Clean Architecture, una propuesta de arquitectura útil para software que tiende a crecimiento y cambio.",
+      "highlights": [
+        "Clean Architecture",
+        "Finalizado"
+      ],
+      "url": "https://www.udemy.com/certificate/UC-aa948523-e431-422e-9615-afda35d5a436/"
+    },
+    {
+      "name": "Patrones de diseño en C#.NET",
+      "isActive": true,
+      "description": "Patrones de diseño más utilizados, como implementarlos y utilizarlos en proyectos que utilicen Asp .Net y C#.",
+      "highlights": [
+        "Patrones de diseño",
+        "En curso"
+      ],
+      "url": "https://www.udemy.com/course/aprender-patrones-de-disenos-aplicados-en-asp-net/?couponCode=KEEPLEARNING"
+    }
+
   ]
 }
